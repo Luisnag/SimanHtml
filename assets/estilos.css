@@ -1,0 +1,600 @@
+/**
+
+selectores
+- etiqueta html (body, section, img...)
+
+- clase (.) (podes reutilizar)
+- id (#) (unico)
+ */
+
+/*
+.encabezado{
+    background-color: burlywood;
+}
+
+#nosotros{
+    background-color: cadetblue;
+}*/
+
+/** selector universal */
+* {
+
+    box-sizing: border-box;
+}
+
+.topImg {
+    margin: 0;
+    top: 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.topImg img {
+    border-radius: 8px;
+}
+
+
+.titulos {
+    display: flex;
+    align-items: center;
+    background-color: #a83338;
+    width: 100%;
+}
+
+.imgTitle {
+    justify-content: flex-start;
+}
+
+.search {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.iconTitle {
+    margin-right: auto;
+    padding: 5px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.serc {
+    background-color: #7b262b;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.sercInput {
+    background-color: #7b262b;
+    color: #fff;
+    border: 0px;
+    width: 90%;
+    border-color: #7b262b;
+    /* Añadir un borde */
+    outline: none;
+    /* Evitar que quede resaltado al hacer clic */
+}
+
+.menuTi {
+    padding: 10px;
+    width: 10%;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.imgRed {
+    border-radius: 10px;
+}
+
+.imgDe {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.imgIz {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFF;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+
+    margin-top: -20px;
+    /** ajusta el indice del elemento para que este encima de los otros elementos (prioridad) */
+
+}
+
+
+/** alineando los elementos del nav */
+nav ul li {
+    display: inline-block;
+    /** pone los li en linea (horizontal) */
+    text-decoration: none;
+    padding: 10px;
+}
+
+a {
+    color: #0a0604;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7b262b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    padding: 15px;
+    margin-top: -50px;
+    /* Ajusta la altura según sea necesario */
+}
+
+section {
+    padding: 20px;
+}
+
+.carru img {
+    border-radius: 10px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/image1.jpg);
+    height: 600px;
+    width: 100%;
+    /** adaptamos el tamaño de la imagen al contenedor */
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    flex-flow: column nowrap;
+}
+
+.titulo {
+    color: #FFF;
+    /** 
+        px
+        1rem (16px)
+     */
+    font-size: 4rem;
+    /** cambia el grosor de la fuente */
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    color: #FFF;
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.caja {
+    width: 80%;
+    margin: auto;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.contenido_imagen {
+    position: relative;
+    flex: 0 0 400px;
+}
+
+.img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+}
+
+/** pseudo clases (hover) */
+.img:hover {
+    transform: scale(1.1);
+}
+
+.contenido-nosotros {
+    flex: 0 0 50%;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #222;
+    text-align: center;
+}
+
+span {
+    color: #FF7B00;
+}
+
+#parrafo-nosotros {
+    line-height: 40px;
+    color: #666666;
+}
+
+/** apartado de ofertas */
+.ofertas {
+    position: relative;
+    background-image: url(./img/image3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.btn {
+    width: 170px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-ofertas {
+    background-color: #FF7B00;
+    color: white;
+}
+
+.btn-ofertas:hover {
+    background-color: #a26e3e;
+}
+
+/** apartado del menu de hamburguesas */
+
+.menu-hamburguesa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.tarjeta {
+    width: 30%;
+    height: 300px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/** nth-child */
+.tarjeta:nth-child(1) {
+    background-image: url(./img/product1.jpg);
+}
+
+.tarjeta:nth-child(2) {
+    background-image: url(./img/product2.jpg);
+}
+
+.tarjeta:nth-child(3) {
+    background-image: url(./img/product3.jpg);
+}
+
+.tarjeta:nth-child(4) {
+    background-image: url(./img/product4.jpg);
+}
+
+.tarjeta:nth-child(5) {
+    background-image: url(./img/product5.jpg);
+}
+
+.tarjeta:nth-child(6) {
+    background-image: url(./img/product6.jpg);
+}
+
+.tarjeta-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.tarjeta-contenido:hover {
+    opacity: 1;
+}
+
+h5 {
+    font-size: 2rem;
+    color: #FF7B00;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.no-gutters .col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.no-gutters .col>img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    box-shadow: #320909;
+}
+
+.text-overlay a {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-tarjeta {
+    background-color: #AB561D;
+    color: white;
+}
+
+/** overlay -> clase css **/
+.overlay,
+.encabezado::before,
+.ofertas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.encabezado *,
+.ofertas * {
+    position: relative;
+}
+
+
+/** animacion de formularios y estilos **/
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.containerForm {
+    max-width: 800px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.form__input {
+    width: clamp(120px, 50vw, 420px);
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border: 1px solid $black;
+    border-radius: 2px;
+    margin: 0.625rem auto;
+    transition: all 250ms;
+
+    @media (min-width: 768px) {
+        width: clamp(120px, 35vw, 420px);
+    }
+
+    &:focus {
+        outline: none;
+        border-top-color: rgba(0, 0, 0, 0.1);
+    }
+
+
+    &:focus+.form__label,
+    &:not(:placeholder-shown)+.form__label {
+        transform: translateY(-4.50rem) scale(1);
+        color: $black;
+    }
+
+
+    &::placeholder {
+        display: none;
+        color: transparent;
+
+
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
+    }
+
+
+    &:not(:placeholder-shown) {
+        border-top-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.form__label {
+    font-size: 1rem;
+    color: $grey;
+    display: block;
+
+
+    transform: translate(1.25rem, -2.5rem);
+    transform-origin: 0 0;
+    transition: all 500ms;
+
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+}
+
+
+
+#footer-main {
+    background-color: #f5f5f5c9;
+    border: solid 1px #333;
+    padding: 20px;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 40px;
+    color: #333;
+    background-color: #f5f5f5c9;
+}
+
+.col-divider {
+    border-right: 0.5px solid #4c4c4c;
+    padding-right: 10px;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.footer-grid a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-grid p {
+    line-height: .5;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #777777;
+    padding: ;
+}
+
+.social-icons a {
+    color: #777777;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+.textprod {
+    font-size: 12px;
+}
+
+.contenedor {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.imagenCompra {
+    transition: transform 0.3s ease;
+}
+
+.boton-comprar {
+    display: none;
+}
+
+.contenedor:hover .boton-comprar {
+    display: block;
+}
+
+
+
+.social-icons i {
+    box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 1rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+    color: #82074a;
+    font-size: 16px;
+    fill: #82074a;
+    margin-right: 12px;
+}
+
+.copyR {
+    padding: 0.7rem;
+    background: #82074a;
+    color: #fff;
+    text-align: center;
+}

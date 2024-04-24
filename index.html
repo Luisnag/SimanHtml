@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <title>Siman</title>
+</head>
+<style>
+    /** dando estilos desde la pagina html
+    nav{
+        background-color: brown;
+    }
+
+    section{
+        background-color: aqua;
+    } **/
+</style>
+
+<body>
+
+    <section class="topImg col-12">
+        <picture>
+            <source srcset="assets/img/d0408c7f-7a22-4c93-9af0-eaa86b4b3582___d2bd19fc9c7aa403ae9e78b8efbde176.webp"
+                media="(min-width: 768px)">
+            <source srcset="assets/img/encabezado2.webp" media="(max-width: 767.98px)">
+            <img src="assets/img/d0408c7f-7a22-4c93-9af0-eaa86b4b3582___d2bd19fc9c7aa403ae9e78b8efbde176.webp"
+                alt="encabezado" class="img-fluid">
+        </picture>
+    </section>
+
+
+
+
+    <div class="titulos">
+
+        <div class="col-3">
+            <img src="assets/img/Captura de Pantalla 2024-04-20 a la(s) 18.32.59.png" style="float: right;  "
+                class="img-fluid d-none d-md-block">
+
+        </div>
+        <div class="col-1" style="display: flex; color: #fff; font-size: 18px; ">
+            <i class="bi bi-list"></i>
+            <p class="d-none d-md-block"> Menu</p>
+        </div>
+        <div class="col-5">
+
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"
+                    style=" background-color: #7d282c; color: #fff; border: 0;">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="text" class="form-control" style=" background-color: #7d282c; color: #fff; border: 0;"
+                    placeholder="Buscar" aria-describedby="basic-addon1">
+            </div>
+
+
+        </div>
+
+        <div class="col-1"></div>
+        <div class="col-1 iconTitle nav-item" style="display: flex;">
+            <i class="bi bi-cart-fill"></i>
+            <i class="bi bi-person-circle d-none d-md-block"></i>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <i class="bi bi-telephone-fill"></i> <a href="#home">2298-3777</a>
+                </li>
+                <li>
+                    <i class="bi bi-whatsapp"></i> <a href="#seccion-nosotros">Compra por WhatsApp
+                    </a>
+                </li>
+                <li>
+                    <i class="bi bi-gift"></i> <a href="#menu">Clubes</a>
+                </li>
+                <li>
+                    <i class="bi bi-clipboard"></i><a href="#">AFILIACIÓN CREDISIMAN</a>
+                </li>
+                <li>
+                    <i class="bi bi-credit-card"></i><a href="#">CREDISIMAN</a>
+                </li>
+                <li>
+                    <i class="bi bi-alarm"></i><a href="#">Horarios Sucursales</a>
+                </li>
+                <li>
+                    <i class="bi bi-shop"></i><a href="#">Vende en Siman.com</a>
+                </li>
+                <li>
+                    <i class="bi bi-shop"></i><a href="#">Markeplace</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="carru">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <picture>
+                        <source
+                            srcset="assets/img/688bf4f7-a205-43b1-ad50-bbf44a6cc06e___314ed56ac7cfc32a8301b829e4b21df0.webp"
+                            media="(min-width: 768px)">
+                        <source srcset="assets/img/carri1.webp" media="(max-width: 767.98px)">
+                        <img src="assets/img/688bf4f7-a205-43b1-ad50-bbf44a6cc06e___314ed56ac7cfc32a8301b829e4b21df0.webp"
+                            class="d-block w-100" alt="baner1">
+                    </picture>
+
+
+
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source
+                            srcset="assets/img/957edc48-9257-416a-94e0-cf8981b45707___1b1fa90f19f988a8af6198dd860bc063.webp"
+                            media="(min-width: 768px)">
+                        <source srcset="assets/img/carri2.webp" media="(max-width: 767.98px)">
+                        <img src="assets/img/957edc48-9257-416a-94e0-cf8981b45707___1b1fa90f19f988a8af6198dd860bc063.webp"
+                            class="d-block w-100" alt="banner2">
+                    </picture>
+
+
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source
+                            srcset="assets/img/a7958343-f74b-4427-b1a0-5c79eebc9e7a___cf823f3dde69f2a9af99e924ec610ed7.webp"
+                            media="(min-width: 768px)">
+                        <source srcset="assets/img/carri3.webp" media="(max-width: 767.98px)">
+                        <img src="assets/img/a7958343-f74b-4427-b1a0-5c79eebc9e7a___cf823f3dde69f2a9af99e924ec610ed7.webp"
+                            class="d-block w-100" alt="banner3">
+                    </picture>
+
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="container text-center">
+        <div class="row g-2">
+            <div class="col-12">
+                <picture>
+                    <source srcset="assets/img/title2.webp" media="(min-width: 768px)">
+                    <source srcset="assets/img/mama2.webp" media="(max-width: 767.98px)">
+                    <img src="assets/img/title2.webp" class="img-fluid imgRed">
+                </picture>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center ">
+        <div class="row g-2">
+            <div class="col-12">
+
+                <div class="swiffy-slider slider-item-helper slider-item-show4">
+                    <ul class="slider-container py-4">
+                        <li class=" " style="background-color: #fff;">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="assets/img/56752b7a-2992-47a3-bf5c-7a58836d13bd___d84d95e943fe4e9d582dcbc57c347b9f.webp"
+                                    class="card-img-top imgRed" loading="lazy" alt="...">
+
+
+                        </li>
+                        <li class="" style="background-color: #fff;">
+
+
+                            <img src="assets/img/646c5c5e-d29c-4b5a-9c95-c177f3b65acc___217dd1661fbcef43325b5325b7d085d2.webp"
+                                class="card-img-top imgRed" loading="lazy" alt="...">
+
+
+                        </li>
+                        <li class="" style="background-color: #fff;">
+                            <img src="assets/img/64dedd4f-faf2-4d36-9859-ebfafb0c7b99___478f14d7ea336a95230aaf0c59719aa0.webp"
+                                class="card-img-top imgRed" loading="lazy" alt="...">
+
+
+                        </li>
+                        <li class="slide-visible" style="background-color: #fff;">
+
+
+                            <img src="assets/img/64dedd4f-faf2-4d36-9859-ebfafb0c7b99___478f14d7ea336a95230aaf0c59719aa0.webp"
+                                class="card-img-top imgRed" loading="lazy" alt="...">
+
+
+
+                        </li>
+                        <li class="slide-visible" style="background-color: #fff;">
+
+
+                            <img src="assets/img/986398af-8164-48a3-b6a6-e703759f59f9___9bd9ddd54451791262b75b66d13ce652.webp"
+                                class="card-img-top imgRed" loading="lazy" alt="...">
+
+
+
+                        </li>
+                        <li>
+
+                            <div style="background-color: #fff;">
+                                <img src="assets/img/7de62648-2315-4700-ac10-c0ae6f794628___3e318f56522269c1a05ab55ee2b5b000.webp"
+                                    class="card-img-top imgRed" loading="lazy" alt="...">
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <button type="button" class="slider-nav" aria-label="Go left"></button>
+                    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+                    <div class="slider-indicators">
+                        <button class="" aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide" class=""></button>
+                        <button aria-label="Go to slide" class=""></button>
+                        <button aria-label="Go to slide" class="active"></button>
+                        <button aria-label="Go to slide"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="col-12 p-3 mb-2 text-center">
+            Ver Condiciones de Ofertas
+        </div>
+        <div class="container text-center">
+            <div class="row g-2">
+                <div class="col-12 col-md-6">
+                    <img src="assets/img/sofa.webp " class="img-fluid imgRed" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="assets/img/calzado.webp" class="img-fluid imgRed" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="container text-center">
+        <div class="row g-2">
+
+            <div class="col-12 p-3 mb-2">
+                <div class="swiffy-slider slider-item-helper slider-item-show4"
+                    style="background-color: black; border-radius: 10px;">
+                    <ul class="slider-container py-4">
+                        <li class="" style="background-color: black;">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="assets/img/slide1.webp" loading="lazy" alt="..."
+                                    style=" border-radius: 10px;">
+
+
+                        </li>
+                        <li class="" style="background-color: black;">
+
+
+                            <img src="assets/img/slide2.webp" class="card-img-top" loading="lazy" alt="..."
+                                style=" border-radius: 10px;">
+
+
+                        </li>
+                        <li class="" style="background-color: black;">
+                            <img src="assets/img/slide3.webp" class="card-img-top" loading="lazy" alt="..."
+                                style=" border-radius: 10px;">
+
+
+                        </li>
+                        <li class="slide-visible" style="background-color: black;">
+
+
+                            <img src="assets/img/slide4.webp" class="card-img-top" loading="lazy" alt="..."
+                                style=" border-radius: 10px;">
+
+
+
+                        </li>
+                        <li class="slide-visible" style="background-color: black;">
+
+
+                            <img src="assets/img/slide5.webp" class="card-img-top" loading="lazy" alt="..."
+                                style=" border-radius: 10px;">
+
+
+
+                        </li>
+                        <li style="background-color: black;">
+
+                            <div>
+                                <img src="assets/img/slide6.webp" class="card-img-top" loading="lazy" alt="..."
+                                    style=" border-radius: 10px;">
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <button type="button" class="slider-nav" aria-label="Go left"></button>
+                    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+                    <div class="slider-indicators">
+                        <button class="" aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide" class=""></button>
+                        <button aria-label="Go to slide" class=""></button>
+                        <button aria-label="Go to slide" class="active"></button>
+                        <button aria-label="Go to slide"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script lang="javascript">
+        function zoomIn(element) {
+            element.querySelector('.imagenCompra').style.transform = 'scale(1.2)';
+            // Agregar el botón de comprar
+            var boton = document.createElement('button');
+            boton.innerText = 'Comprar';
+            boton.className = 'btn btn-danger';
+            element.appendChild(boton);
+        }
+
+        function zoomOut(element) {
+            element.querySelector('.imagenCompra').style.transform = 'scale(1)';
+            // Remover el botón de comprar
+            var boton = element.querySelector('.btn');
+            if (boton) {
+                boton.parentNode.removeChild(boton);
+            }
+        }
+    </script>
+
+    <section class="container text-center ">
+        <div class="row g-2">
+
+            <div class="col-12 p-3 mb-2 text-start">
+                <p>TECNOLOGIA PARA MAMA</p>
+            </div>
+            <div class="col-md-12  p-3 mb-2">
+                <div class="swiffy-slider slider-item-show5 slider-nav-round slider-nav-page">
+                    <ul class="slider-container">
+
+                        <li>
+                            <div class="card border-0 contenedor" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto1.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="Imagen">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Samsung</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Reloj smartwatch Galaxy</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 text-danger">$200 <span
+                                            class="badge text-bg-danger textprod">-54%</span> </p>
+                                    <p class="text-decoration-line-through text-secondary textprod">$279.00</p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card border-0 contenedor" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto2.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Klip Xtreme</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Audifonos bt tws Zoundb..</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 text-danger">$23.31 <span
+                                            class="badge text-bg-danger textprod">-10%</span> </p>
+                                    <p class="text-decoration-line-through text-secondary textprod">$25.90</p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto3.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Argom</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Auriculares skeipods e55</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 text-danger">$24.90 <span
+                                            class="badge text-bg-danger textprod">-27%</span> </p>
+                                    <p class="text-decoration-line-through text-secondary textprod">$34.90</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto4.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Google</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Reproductor Multimedia</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2">$89 </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto5.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Sony</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Audifonos Color Rosados</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 ">$14.90</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto6.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">JBL</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Bocina JBL Go 4Watts</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 text-danger">$39.90 <span
+                                            class="badge text-bg-danger textprod">-20%</span> </p>
+                                    <p class="text-decoration-line-through text-secondary textprod">$49.90</p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto7webp.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Logitech</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Audifonos on ear H390</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2">$35</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto8.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Logitech</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Teclado pop rosado</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 text-danger">$89.90 <span
+                                            class="badge text-bg-danger textprod">-18%</span> </p>
+                                    <p class="text-decoration-line-through text-secondary textprod">$109.00</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" class="contenedor">
+                            <div class="card border-0">
+                                <div class="ratio ratio-1x1">
+                                    <img src="assets/img/producto9.webp" class="card-img-top imagenCompra"
+                                        loading="lazy" alt="...">
+                                </div>
+                                <div class="text-start fs-9">
+                                    <div class="d-flex">
+                                        <h3 class="text-uppercase textprod">Nintendo</h3>
+
+                                    </div>
+                                    <p class="text-uppercase h6 textprod textprod">Nintendo Switch lite rosa</p>
+                                    <p class="text-secondary fw-lighter textprod">Vendido por <b>Siman</b> </p>
+                                    <p class="px-2 text-primary">$279.00 <span
+                                            class="badge text-bg-primary textprod">-20%</span> <img
+                                            src="assets/img/credis.svg"> </p>
+
+                                    <p class="px-2 text-danger">$299.00 <span
+                                            class="badge text-bg-danger textprod">-14%</span> </p>
+                                    <p class="text-decoration-line-through text-secondary textprod">$349.00</p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="slider-nav" aria-label="Go left"></button>
+                    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container text-center ">
+            <div class="row g-2">
+                <div class="col-12 col-md-6">
+                    <p>Joyeria para damas desde $9.99</p>
+                    <img src="assets/img/joyeria.webp" class="img-fluid imgRed" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Hasta 40% de DCTO en camas y colchones</p>
+                    <img src="assets/img/colchones.webp" class="img-fluid imgRed" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col img-container">
+                    <img class="img-fluid imgIz" src="assets/img/model1.webp">
+                    <div class="text-overlay"><a href="#">Ver mas</a></div>
+                </div>
+                <div class="col img-container">
+                    <img class="img-fluid" src="assets/img/model2.webp">
+                    <div class="text-overlay"><a href="#">Ver mas</a></div>
+                </div>
+                <div class="col img-container">
+                    <img class="img-fluid imgDe" src="assets/img/model4.webp">
+                    <div class="text-overlay"><a href="#">Ver mas</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- pie de pagina -->
+
+    <footer id="footer-main">
+        <div class="footer-grid">
+            <section class="p-5">
+                <img src="assets/img/logo-footer.png" height="20">
+
+
+
+
+
+
+
+            </section>
+
+        </div>
+        <div class="footer-grid p-5">
+            <section>
+                <p> <b> Siman Corporativo</b> </p>
+                <p> <a href="#"> Quiénes Somos</a> </p>
+                <p> <a href="#"> Visión y Misión</a> </p>
+                <p> <a href="#"> Historia</a> </p>
+                <p> <a href="#"> Sucursales</a> </p>
+                <p> <a href="#"> Servicios</a> </p>
+                <p> <a href="#"> Empleos Siman</a> </p>
+            </section>
+            <section>
+                <p> <b> Programas</b> </p>
+                <p> <a href="#"> Monedero</a> </p>
+                <p> <a href="#"> Certificado de Regalo</a> </p>
+                <p> <a href="#"> Garantias</a> </p>
+                <p> <a href="#"> Siman PRO</a> </p>
+                <p> <a href="#"> Credisiman</a> </p>
+                <p> <a href="#"> Markeplace</a> </p>
+            </section>
+            <section>
+                <p> <b> Servicio al cliente </b> </p>
+                <p> <a href="#"> Preguntas Frecuentes</a> </p>
+                <p> <a href="#"> Condiciones ofertas</a> </p>
+                <p> <a href="#"> Seguridad del sitio</a> </p>
+                <p> <a href="#"> Política de Privacidad</a> </p>
+            </section>
+            <section class="col-divider">
+                <p></p>
+                <p> <a href="#"> Política de devoluciones</a> </p>
+                <p> <a href="#"> Derecho de Retracto</a> </p>
+                <p> <a href="#"> Condiciones de uso</a> </p>
+                <p> <a href="#"> Términos y condiciones</a> </p>
+                <p> <a href="#"> Boletín COVID-19</a> </p>
+            </section>
+            <section>
+                <div class="select-container">
+                    <select class="form-select p-3" onmouseover="showOptions()" style="background-color:#f5f5f5c9 ;">
+                        <option value="SV" selected>🇸🇻 El Salvador | US $ |</option>
+                        <option value="GT">🇬🇹 Guatemala</option>
+                        <option value="CR">🇨🇷 Costa Rica</option>
+                        <option value="NI">🇳🇮 Nicaragua</option>
+                    </select>
+                </div>
+
+
+                <section style="color: #2c2c2cc9; font-size: 25px;">
+                    <p style="font-size: 10px;"> Mantente en Contacto con nosotros </p>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-google-play"></i>
+                </section>
+
+
+
+
+            </section>
+
+        </div>
+        <div class="footer-grid">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="assets/img/pago.svg" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row p-3">
+                    <div class="col-12">
+
+                        <img src="assets/img/fo2.svg" class="img-fluid" style="width: 40px;">
+                        <img src="assets/img/fo3.svg" class="img-fluid" style="width: 40px;">
+                        <img src="assets/img/fo1.svg" class="img-fluid" style="width: 50px;">
+
+                        <img src="assets/img/fo1.svg" class="img-fluid" style="width: 50px;">
+                        <img src="assets/img/fo4.svg" class="img-fluid" style="width: 40px;">
+                        <img src="assets/img/fo5.svg" class="img-fluid" style="width: 40px;">
+                        <img src="assets/img/fo6.webp" class="img-fluid" style="width: 40px;">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 " style="font-size: 10px;">
+
+                        <p>© 2000-2024 Copyright Almacenes Siman El Salvador. Reservados todos los derechos.</p>
+                    </div>
+
+                </div>
+                <div class="row text-center ">
+                    <div class="col-md-2 offset-md-5" style="font-size: 10px; ">
+
+                        <p class="text-center" style="line-height: 1.5;">Almacenes Siman,S.A. DE C.V NIT:
+                            0614-170266-001-3
+                            Venta de diversos artículos
+                            Dirección: Paseo general escalón, #3700, Almacenes Siman Galerias 4ª planta, San Salvador,
+                            San Salvador.
+                            Llámanos 2298-3777 contacto@siman.com</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function showOptions() {
+            var select = document.getElementById("countrySelect");
+            select.style.cursor = "pointer";
+        }
+    </script>
+</body>
+
+</html>
